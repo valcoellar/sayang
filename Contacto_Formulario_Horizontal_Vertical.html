@@ -1,0 +1,99 @@
+
+    <style>
+        
+        .container {
+            max-width: 95%;
+            margin-top: 20px;
+	    margin-left: 20px;
+	    margin-right: 20px;
+	    margin-bottom:20px;
+		
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid var(--Naraja-Palette);
+            padding-bottom: 10px;
+        }
+        .contact-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            font-size: 14px;
+            flex: 1;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .contact-info a {
+            color: black;
+            text-decoration: none;
+        }
+        .contact-form {
+            flex: 1;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #42a5f5;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #1e88e5;
+        }
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+            }
+            .contact-info, .contact-form {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .contact-info {
+                font-size: 12px;
+            }
+        }
+    </style>
+
+    <div class="container">
+        <h1>CONTACTO</h1>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p>Address </p>
+                <p>55101148</p>
+                <p><a href="mailto:contact@crispywaffle.com">contact@crispywaffle.com</a></p>
+                <p>09:00 - 18:00 L-S</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="tel" placeholder="Phone" required>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">CONCTACT</button>
+                </form>
+            </div>
+        </div>
+    </div>

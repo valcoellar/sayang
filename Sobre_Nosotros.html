@@ -1,0 +1,70 @@
+
+    <style>
+        }
+        .container {
+            width: calc(100% - 40px);
+            max-width: 1200px;
+            margin: 20px auto; 
+	    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            background-color: #f8f8f8;
+            padding: 20px; 
+	    margin-bottom: 20px;
+
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .text-box {
+            flex: 1 1 300px;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .image-box {
+            flex: 2 1 400px;
+            background-image: url('img/waffle6.webp');
+            background-size: cover;
+            background-position: center;
+            min-height: 300px;
+        }
+.pText {
+	color: black;
+}
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .image-box {
+                min-height: 200px;
+            }
+        }
+    </style>
+
+
+    <div class="container">
+        <div class="header">
+            <h1 id="sobrenosotros">About</h1>
+        </div>
+        <div class="content">
+            <div class="text-box">
+                <h2>Crispy Octo Waffle</h2>
+                <p class="pText">Lorem ipsum dolor sit amet consectetur adipiscing, elit ullamcorper ac dictumst nibh natoque leo, cum sed taciti bibendum vel.
+
+Non dictum nostra ultrices proin massa rhoncus convallis posuere, eu pellentesque praesent et cras blandit tempus, commodo dui tellus diam dictumst augue feugiat.
+
+Accumsan quam lobortis malesuada ridiculus senectus venenatis per, fringilla dui feugiat ornare sem nascetur mi placerat, praesent libero erat condimentum fermentum litora.
+
+Lorem ipsum dolor sit amet consectetur adipiscing, elit ullamcorper ac dictumst nibh natoque leo, cum sed taciti bibendum vel. </p>
+            </div>
+            <div class="image-box"></div>
+        </div>
+    </div>
+<hr>
